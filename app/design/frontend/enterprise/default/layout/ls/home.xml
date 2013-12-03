@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <ls_home_index_index>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="core/template" name="ls.home.static" template="ls/home/static.phtml"/>
+            <block type="ls_home/page" name="ls.home.rendered" template="ls/home/rendered.phtml"/>
+        </reference>
+    </ls_home_index_index>
+</layout>
